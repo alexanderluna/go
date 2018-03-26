@@ -9,3 +9,4 @@
 
 - [Go in 5 minutes](https://www.goin5minutes.com/screencasts/)
 - [Go by example](https://gobyexample.com/maps)
+- [Go Gitbook](https://astaxie.gitbooks.io/build-web-application-with-golang/en/02.2.html)
