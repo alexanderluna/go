@@ -3,6 +3,8 @@
 - [Hello World](tmp/001)
 - [Interfaces](tmp/002)
 - [Goroutines](tmp/003)
+- [Comparing Type memory](tmp/004)
+- [Sending JSON](tmp/005)
 
 
 ## Resources
