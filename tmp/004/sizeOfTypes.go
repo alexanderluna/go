@@ -6,15 +6,11 @@ import (
 )
 
 func main() {
-	normalInt := int(10)
-	small8 := int8(10)
-	small16 := int16(10)
-	small32 := int32(10)
-	large64 := int64(10)
-
-	fmt.Printf("normal: %T, size of: %d\n", normalInt, unsafe.Sizeof(normalInt))
-	fmt.Printf("small: %T, size of: %d\n", small8, unsafe.Sizeof(small8))
-	fmt.Printf("small: %T, size of: %d\n", small16, unsafe.Sizeof(small16))
-	fmt.Printf("small: %T, size of: %d\n", small32, unsafe.Sizeof(small32))
-	fmt.Printf("large: %T, size of %d\n", large64, unsafe.Sizeof(large64))
+	fmt.Printf("%T,\t size of: %d\n", int(10), unsafe.Sizeof(int(10)))
+	fmt.Printf("%T,\t size of: %d\n", int8(10), unsafe.Sizeof(int8(10)))
+	fmt.Printf("%T,\t size of: %d\n", int16(10), unsafe.Sizeof(int16(10)))
+	fmt.Printf("%T,\t size of: %d\n", int32(10), unsafe.Sizeof(int32(10)))
+	fmt.Printf("%T,\t size of: %d\n", int64(10), unsafe.Sizeof(int64(10)))
+	fmt.Printf("%T,\t size of: %d\n", string("a"), unsafe.Sizeof(string("a")))
+	fmt.Printf("%T,\t size of: %d\n", rune(97), unsafe.Sizeof(rune(97)))
 }
