@@ -19,3 +19,4 @@ extensive standard library full of packages.
 ## Resource
 
 - [The Go Programming Language](https://www.oreilly.com/library/view/the-go-programming/9780134190570/)
+- [Learning Go: An Idiomatic Approach to Real-World Go Programming](https://www.oreilly.com/library/view/learning-go-2nd/9781098139285)

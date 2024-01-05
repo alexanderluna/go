@@ -23,16 +23,13 @@ export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 mkdir -p $HOME/go/{bin,src,pkg}
 ```
 
-- [Hello World](tmp/001)
-- [Interfaces](tmp/002)
-- [Goroutines](tmp/003)
-- [Comparing Type memory](tmp/004)
-- [Sending JSON](tmp/005)
+## Overview
 
+- [Learning Go](./learning_go/)
+- [Hugo](./hugo/)
 
 ## Resources
 
-- [Go in 5 minutes](https://goin5minutes.com/screencasts/)
 - [Go by example](https://gobyexample.com/maps)
-- [Go Gitbook](https://astaxie.gitbooks.io/build-web-application-with-golang/en/02.2.html)
 - [The Go Programming Language](https://www.oreilly.com/library/view/the-go-programming/9780134190570/)
+- [Learning Go: An Idiomatic Approach to Real-World Go Programming](https://www.oreilly.com/library/view/learning-go-2nd/9781098139285)
