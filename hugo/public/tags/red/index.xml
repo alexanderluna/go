@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programming Dungeon</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Programming Dungeon</description>
+    <title>Red on Programming Dungeon</title>
+    <link>http://localhost:1313/tags/red/</link>
+    <description>Recent content in Red on Programming Dungeon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Mar 2024 21:30:26 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Thu, 07 Mar 2024 21:30:26 +0100</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>The about page</description>
-    </item>
+    <lastBuildDate>Wed, 15 Mar 2023 11:00:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/red/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Post 3</title>
       <link>http://localhost:1313/posts/post-3/</link>
