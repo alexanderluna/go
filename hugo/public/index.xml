@@ -6,8 +6,22 @@
     <description>Recent content on Programming Dungeon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Mar 2024 21:30:26 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 13 Mar 2024 01:46:09 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Open Source Software</title>
+      <link>http://localhost:1313/opensource/</link>
+      <pubDate>Wed, 13 Mar 2024 01:46:09 +0100</pubDate>
+      <guid>http://localhost:1313/opensource/</guid>
+      <description>Alexander&amp;rsquo;s open source projects</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description></description>
+    </item>
     <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
@@ -41,14 +55,21 @@
       <link>http://localhost:1313/projects/golang/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/golang/</guid>
-      <description>&#xA;Description&amp;hellip;&#xA;Tech used item item item </description>
+      <description>Efficient servers</description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>http://localhost:1313/projects/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/hugo/</guid>
+      <description>Blazing fast static pages</description>
     </item>
     <item>
       <title>Ruby</title>
       <link>http://localhost:1313/projects/ruby/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/ruby/</guid>
-      <description>&#xA;Description&amp;hellip;&#xA;Tech used item item item </description>
+      <description>Building awesome websites with Ruby on Rails</description>
     </item>
   </channel>
 </rss>

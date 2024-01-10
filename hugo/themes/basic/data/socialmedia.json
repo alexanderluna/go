@@ -1,0 +1,12 @@
+{
+    "accounts": [
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/my-twitter"
+        },
+        {
+            "name": "Github",
+            "url": "https://github.com/my-github"
+        }
+    ]
+}

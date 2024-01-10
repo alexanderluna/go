@@ -1,7 +1,9 @@
 ---
 title: "Projects"
 draft: false
+description: Alexander's projects
+outputs:
+- HTML
+- JSON
+- RSS
 ---
-
-List all my projects. Feel free to click on any of the projects for more
-details.

@@ -73,6 +73,61 @@ have to define the main blocks in your layout files.
 {{ end }}
 ```
 
+## Configuring Data
+
+Inside the `hugo.toml` file you can define a `params` section with data which
+you can access in your templates using `.Params` variable.
+
+```toml
+[params]
+    author = "Alexander Luna"
+```
+
+```html
+<meta name="author" content="{{ .Site.Params.author }}">
+```
+
+Your archetypes front matter is also accessible in the templates through the
+`.Params` variable.
+
+```md
+---
+title: "Hello World"
+---
+```
+
+```handlebars
+<h2>{{ .Params.title }}</h2>
+```
+
+Using the `data` directory you can save data in `JSON`, `YAML` or `TOML` format
+to access it using the `.Data` variable.
+
+```json
+// data/text.json
+
+{
+    "post": "some blog post data"
+}
+```
+
+```handlebars
+<p>{{ .Site.Data.post }}</p>
+```
+
+You can also pull in data from an API using the hugo's `getJSON` function.
+Every time you build your site, Hugo fetching from the API and renders it which
+means that it will not be always up to date when you access the website.
+
+```handlebars
+  {{ $url := 'some_api_url' }}
+  {{ $data := getJSON $url }}
+```
+
+> Hugo will generate an RSS 2.0 feed by default at /index.xml
+> You can generate a json output for your pages using
+> [Custom output formats](https://gohugo.io/templates/output-formats/)
+
 ## Resources
 
 - [Build Websites with Hugo](https://pragprog.com/titles/bhhugo/build-websites-with-hugo/)

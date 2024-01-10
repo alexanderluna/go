@@ -1,0 +1,13 @@
+{
+    "projects": [
+        {
+            "url": "http://localhost:1313/projects/golang/",
+            "title": "Golang" },
+        {
+            "url": "http://localhost:1313/projects/hugo/",
+            "title": "Hugo" },
+        {
+            "url": "http://localhost:1313/projects/ruby/",
+            "title": "Ruby" }
+    ]
+}    
