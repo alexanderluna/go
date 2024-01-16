@@ -2,6 +2,8 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Programming Dungeon'
 theme = 'basic'
+disqusShortname = "programming-dungeon"
+pygmentsUseClasses = true
 
 [params]
 author = "Alexander Luna"
@@ -9,3 +11,14 @@ description = "Improving my programming skills"
 googleAnalytics = "UA-xxxxxxxxxxxx"
 gh_url = "https://api.github.com/users"
 gh_user = "alexanderluna"
+
+[permalinks]
+posts = "posts/:year/:month/:slug/"
+year = "/posts/:slug/"
+month = "/posts/:slug/"
+
+[taxonomies]
+year = "year"
+month = "month"
+tag = "tags"
+category = "categories"

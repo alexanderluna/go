@@ -3,6 +3,10 @@
   width: 80%;
 }
 
+.pagination {
+  background-color: transparent;
+}
+
 nav,
 footer {
   background-color: #333;
