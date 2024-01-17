@@ -3,7 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-03-19T00:01:59+01:00</lastmod>
+    <lastmod>2024-03-20T23:08:38+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/search/</loc>
+    <lastmod>2024-03-20T23:08:38+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/</loc>
     <lastmod>2024-03-19T00:01:59+01:00</lastmod>
@@ -39,6 +42,9 @@
     <lastmod>2024-03-18T23:37:54+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/03/first-post/</loc>
+    <lastmod>2024-03-18T18:37:59+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/programming/</loc>
     <lastmod>2024-03-18T18:37:59+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/opensource/</loc>

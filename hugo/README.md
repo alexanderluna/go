@@ -2,6 +2,19 @@
 
 > Hugo is a framework to build fast and organized content sites.
 
+## Overview
+
+- [Installation](#installation)
+- [Directory Structure](#directory-structure)
+- [Themes](#themes)
+- [Configuring Data](#configuring-data)
+- [Syntax Highlighting](#syntax-highlighting)
+- [Search](#search)
+
+---
+
+- [Resources](#resources)
+
 ## Installation
 
 ```sh
@@ -128,6 +141,33 @@ means that it will not be always up to date when you access the website.
 > You can generate a json output for your pages using
 > [Custom output formats](https://gohugo.io/templates/output-formats/)
 
+## Syntax Highlighting
+
+If you want to add syntax highlighting for code snippets, you have to add the
+`Pygments-style` class to your `hugo.toml` config file.
+
+```toml
+# hugo.toml
+pygmentsUseClasses = true
+```
+
+Now you can generate the actual CSS styles using Chroma styles.
+
+```sh
+hugo gen chromastyles --style=github > syntax.css
+```
+
+## Search
+
+While it is possible to use a 3rd party search service which indexes your
+website to add search functionality to your side, it is much faster and easier
+to generate your own search index which can then be filtered on the client side
+using Javascript.
+
 ## Resources
 
 - [Build Websites with Hugo](https://pragprog.com/titles/bhhugo/build-websites-with-hugo/)
+- [Hugo Documentation: consult frequently](https://gohugo.io/documentation/)
+- [Pygments - syntax highlighter](https://pygments.org)
+- [Chroma - general purpose syntax highlighter in pure Go](https://github.com/alecthomas/chroma)
+- [Lunr - Search made simple](https://lunrjs.com/docs/index.html)

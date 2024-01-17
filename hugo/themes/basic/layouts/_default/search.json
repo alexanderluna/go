@@ -1,0 +1,12 @@
+{
+    "results": [
+        {{- range $index, $page := .Site.RegularPages }}
+        {{- if $index -}} , {{- end }}
+        {
+        "href": {{ .RelPermalink | jsonify }}, 
+        "title": {{ .Title | jsonify }},
+        "body": {{ .Content | plainify | jsonify }}
+        }
+        {{- end }}
+    ]
+}
