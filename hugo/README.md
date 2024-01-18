@@ -164,6 +164,23 @@ website to add search functionality to your side, it is much faster and easier
 to generate your own search index which can then be filtered on the client side
 using Javascript.
 
+## Working with Assets
+
+Hugo comes with pipes to manage assets such as css, javascript and images for
+production.
+
+- `minify`: remove whitespace and comments
+- `fingerprint`: add hash string of the resource's content
+- `toCSS`: transpile Sass to CSS
+
+> Saves your images in the `static` directory and render it using the `relURL`
+> pipe.
+
+Hugo provides several `shortcodes` for rendering images, youtube videos and
+other types assets. It also possible to create your own `shortcodes` to adjust
+to your needs like resizing images. For that you have to create a `shortcodes`
+directory in your themes layout directory.
+
 ## Resources
 
 - [Build Websites with Hugo](https://pragprog.com/titles/bhhugo/build-websites-with-hugo/)

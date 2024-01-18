@@ -1,0 +1,16 @@
+{{ $image := $.Page.Resources.GetMatch (.Get 0)}}
+{{ $smImage := $image.Resize "760x"}}
+{{ $mdImage := $image.Resize "950x"}}
+{{ $lgImage := $image.Resize "1330x"}}
+
+<picture>
+    {{ with $lgImage }}
+    <source media="(min-width: 750px)" srcset="{{ .RelPermalink }}">
+    {{ end }}
+    {{ with $mdImage }}
+    <source media="(min-width: 500px)" srcset="{{ .RelPermalink }}">
+    {{ end }}
+    {{ with $smImage }}
+    <img src="{{ .RelPermalink }}" alt="{{ $.Get 1 }}">
+    {{ end }}
+</picture>
