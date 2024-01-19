@@ -11,6 +11,10 @@
 - [Syntax Highlighting](#syntax-highlighting)
 - [Search](#search)
 - [Working with Assets](#working-with-assets)
+- [Deployment](#deploying)
+  - [Web Server deployment](#web-server-deployment)
+  - [Cloud Storage deployment](#cloud-storage-deployment)
+  - [Continuous Integration deployment](#continuous-integration-deployment)
 - [Resources](#resources)
 
 ## Installation
