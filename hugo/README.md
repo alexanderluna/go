@@ -10,9 +10,7 @@
 - [Configuring Data](#configuring-data)
 - [Syntax Highlighting](#syntax-highlighting)
 - [Search](#search)
-
----
-
+- [Working with Assets](#working-with-assets)
 - [Resources](#resources)
 
 ## Installation
@@ -180,6 +178,90 @@ Hugo provides several `shortcodes` for rendering images, youtube videos and
 other types assets. It also possible to create your own `shortcodes` to adjust
 to your needs like resizing images. For that you have to create a `shortcodes`
 directory in your themes layout directory.
+
+## Deploying
+
+When it comes to deploying your Hugo site you have three main options:
+
+- upload the `public` directory to a server
+- push and build your code in the cloud using Continuous Integration
+- dockerize your project and deploy on a docker host
+
+> When you build your site on your local machine all Hugo does is to generate
+> static files in the `public` directory. Hence, this is the easiest way to
+> deploy your site.
+
+### Web Server deployment
+
+Hosting a hugo site on your own web server is the easiest approach. All you need
+is the IP, user account and password. You build your site locally and deploy it
+using `sftp`, `scp` or `rsync`.
+
+```sh
+# build your site
+webpack && hugo --cleanDestinationDir
+
+# upload your public folder to the web server
+sftp -r username@hostname:public_html <<< 'put public/*'
+scp -r public/* username@hostname:public_html
+rsync -avz --delete public/ username@hostname.com:public_html
+
+# or use an npm script
+npm run deploy:webserver
+```
+
+### Cloud Storage deployment
+
+If you want to deploy your site to a cloud storage provider like AWS S3, Azure
+or Google Cloud Storage. Configure your storage for hosting.
+
+```sh
+# configure credentials
+aws configure 
+
+# create a bucket
+aws s3api create-bucket --bucket BUCKET_NAME --acl public-read --region YOUR_REGION
+
+# enable bucket to serve webpages
+aws s3 website BUCKET_URL --index-document index.html --error-document error.html
+
+# create a bucket policy which decides who can access your website
+aws s3api put-bucket-policy --bucket BUCKET_NAME --policy file://bucketpolicy.json
+```
+
+Now you can add your AWS S3 bucket and region configuration to your `hugo.toml`
+file to deploy your side using hugo.
+
+```sh
+hugo --cleanDestinationDir
+hugo deploy
+```
+
+### Continuous Integration deployment
+
+For the CI deployment you need to create a git repository and add a `.gitignore`
+
+```sh
+git init
+
+echo 'node_modules' >> .gitignore
+echo 'public' >> .gitignore
+
+git add .
+git commit -m 'Deploying site using CI'
+git remote add origin GIT_REPO_URL
+git push -u origin master
+```
+
+Now you can log into your continuous deployment provider
+(Netlify, Cloudflare, Github pages). There you have to connect your git account
+and authorize access to your repository. The build command is the npm script.
+The publish directory is the `public` directory which hugo generates after the
+build process finishes.
+
+```sh
+npm run deploy:cloud
+```
 
 ## Resources
 

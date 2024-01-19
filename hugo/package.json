@@ -3,16 +3,20 @@
   "version": "1.0.0",
   "description": "hugo blog",
   "scripts": {
-    "build": "npm-run-all webpack hugo-build",
+    "build": "npm run webpack && npm run hugo-build",
     "hugo-build": "hugo --cleanDestinationDir",
     "hugo-server": "hugo server --disableFastRender",
-    "webpack": "webpack",
-    "webpack-watch": "webpack --watch",
-    "dev": "npm-run-all webpack --parallel webpack-watch hugo-server"
+    "webpack": "webpack --mode=production",
+    "webpack-watch": "npm run webpack --watch",
+    "dev": "npm run webpack && npm run webpack-watch & npm run hugo-server",
+    "upload:sftp": "sftp -r username@hostname:public_html <<< 'put public/*'",
+    "upload:scp": "scp -r public/* username@hostname:public_html",
+    "upload:rsync": "rsync -avz --delete public/ username@hostname.com:public_html",
+    "deploy:webserver": "webpack && npm run hugo-build && npm run upload:rsync",
+    "deploy:cloud": "npm run build && hugo deploy"
   },
   "private": true,
   "devDependencies": {
-    "npm-run-all": "^4.1.5",
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4"
   },

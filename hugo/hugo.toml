@@ -22,3 +22,12 @@ year = "year"
 month = "month"
 tag = "tags"
 category = "categories"
+
+[deployment]
+[[deployment.targets]]
+name = "prod"
+URL = "s3://BUCKET_NAME?region=YOUR_REGION"
+
+[[deployment.matchers]]
+pattern = "^.+\\.(html|xml|js|css)$"
+gzip = true
