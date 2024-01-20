@@ -8,25 +8,32 @@ in writing robust programs at scale. It is similar to C while maintaining a
 simple syntax for readability. Its concurrency model based on CSP takes
 advantage of modern computers and makes go a great general purpose language.
 
+## Overview
+
+- [Installing](#installing)
+- [Development Environment](#development-environment)
+- [Learning Go](./learning_go/)
+- [Hugo](./hugo/)
 
 ## Installing
 
 ```bash
-brew install golang
-
-# in .zshrc
-export GOPATH=$HOME/go
-export GOROOT="$(brew --prefix golang)/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+brew install go
 
 # create folders
 mkdir -p $HOME/go/{bin,src,pkg}
+
+# check version
+go version
 ```
 
-## Overview
+## Development Environment
 
-- [Learning Go](./learning_go/)
-- [Hugo](./hugo/)
+In order to write Go programs you will need three extensions:
+
+- Go development tools
+- Delve debugger
+- gopls (language server)
 
 ## Resources
 
