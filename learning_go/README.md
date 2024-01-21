@@ -14,7 +14,8 @@ development tools at your disposal:
 ## Overview
 
 - [The Basics](#the-basics)
-  - [Hello World](./hello_world/hello.go)
+- [Hello World](./hello_world/hello.go)
+- [Predeclared Types](./predeclared_types/predeclared_types.go)
 - [Resources](#resources)
 
 ## The Basics
