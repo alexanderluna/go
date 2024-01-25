@@ -16,6 +16,7 @@ development tools at your disposal:
 - [The Basics](#the-basics)
 - [Hello World](./hello_world/hello.go)
 - [Predeclared Types](./predeclared_types/predeclared_types.go)
+- [Composite Types](./composite_types/composite_types.go)
 - [Resources](#resources)
 
 ## The Basics
