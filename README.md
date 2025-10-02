@@ -15,7 +15,7 @@ advantage of modern computers and makes go a great general purpose language.
 - [Learning Go](./learning_go/)
 - [Hugo](./hugo/)
 
-## Installing
+## Installing and Running Go
 
 ```bash
 brew install go
@@ -25,6 +25,12 @@ mkdir -p $HOME/go/{bin,src,pkg}
 
 # check version
 go version
+
+# execute a directory (.) or file (*.go)
+go run . 
+
+# run tests
+go test
 ```
 
 ## Development Environment
