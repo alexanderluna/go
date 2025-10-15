@@ -10,10 +10,13 @@ advantage of modern computers and makes go a great general purpose language.
 
 ## Overview
 
-- [Installing](#installing)
-- [Development Environment](#development-environment)
+- [Installing Go](#installing-and-running-go)
+- [Setup Development Environment](#development-environment)
 - [Learning Go](./learning_go/)
-- [Hugo](./hugo/)
+- [Hugo](./hugo/): A blog with a custom theme, archetypes and search
+- [CLI Apps](#overview)
+  - [Bookworms](./cli_bookworms/): Bookshelf comparison from JSON
+  - [Logger](./cli_logger/): logger API with DST and Functional options pattern
 
 ## Installing and Running Go
 
@@ -25,6 +28,9 @@ mkdir -p $HOME/go/{bin,src,pkg}
 
 # check version
 go version
+
+# initialize a module
+go mod init MODULE_NAME
 
 # execute a directory (.) or file (*.go)
 go run . 
@@ -43,6 +49,7 @@ In order to write Go programs you will need three extensions:
 
 ## Resources
 
-- [Go by example](https://gobyexample.com/maps)
+- ★★★★☆ [Go by example](https://gobyexample.com/)
+- ★★★☆☆ [Learning Go: An Idiomatic Approach to Real-World Go Programming](https://www.oreilly.com/library/view/learning-go-2nd/9781098139285)
+- ★★★★★ [Learn Go with Pocket-Sized Projects](https://www.manning.com/books/learn-go-with-pocket-sized-projects)
 - [The Go Programming Language](https://www.oreilly.com/library/view/the-go-programming/9780134190570/)
-- [Learning Go: An Idiomatic Approach to Real-World Go Programming](https://www.oreilly.com/library/view/learning-go-2nd/9781098139285)

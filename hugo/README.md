@@ -1,4 +1,4 @@
-# Hugo Framework
+# Hugo Blog
 
 > Hugo is a framework to build fast and organized content sites.
 
@@ -164,7 +164,9 @@ hugo gen chromastyles --style=github > syntax.css
 While it is possible to use a 3rd party search service which indexes your
 website to add search functionality to your side, it is much faster and easier
 to generate your own search index which can then be filtered on the client side
-using Javascript.
+using Javascript (for example with Lunr):
+
+[view source](./themes/basic/assets/js/index.js)
 
 ## Working with Assets
 
